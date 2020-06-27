@@ -5,48 +5,56 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workout Workers-Login</title>
-    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/public/stylesheet/homestyle.css"/>
   </head>
 
- <body>
+<body>
   <div class="hero is-fullheight is-dark">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="column is-8 is-offset-2">
-            <h3 class="title has-text-white">Login</h3>
-            <hr class="login-hr">
-            <p class="subtitle has-text-white">Please login to view your fitness profile!</p>
-        </div>
-        <div class="box">
-            <div class="box">
-              <img src="/fitness.png">
+    <section class="container">
+      <div class="columns is-multiline">
+        <div class="column is-8 is-offset-2 register">
+          <div class="columns">
+            <div class="column left">
+              <h1 class="title is-1">Workout Workers</h1>
+              <p>Knausgaard snackwave 8-bit listicle intelligentsia cardigan small batch farm-to-table tote bag normcore beard. Disrupt 90's poutine, occupy prism locavore gastropub blog roof party seitan viral food truck vice.</p>
             </div>
-            <div class="title has-text-grey is-5">Please enter your work email and password.</div>
-            <form>
+            <div class="column right has-text-centered">
+              <h1 class="title is-4">Sign up today!</h1>
+              <p class="description">Please sign up to create your fitness profile!</p>
+              <br>
+              <form>
                 <div class="field">
-                  <div class="control">
-                    <input class="input is-success is-large" type="email" placeholder="Work Email" autofocus="">
-                  </div>
+                    <div class="control">
+                       <input class="input is-success" type="text" placeholder="Name">
+                    </div>
                 </div>
                 <div class="field">
-                  <div class="control">
-                    <input class="input is-success is-large" type="password" placeholder="Password">
-                  </div>
+                    <div class="control">
+                       <input class="input is-success" type="text" placeholder="Work Email">
+                    </div>
                 </div>
-                <label class="checkbox" style="margin: 20px;">
-                    <input type="checkbox">
-                      Remember me
-                </label>
-                <button class="button is-block is-success is-large is-fullwidth">Login</button>
-            </form>
+                <div class="field">
+                    <div class="control">
+                       <input class="input is-success" type="text" placeholder="Username">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                       <input class="input is-success" type="text" placeholder="Password">
+                    </div>
+                </div>
+                <button class="button is-block is-success is-fullwidth is-medium">Submit</button>
+                <br>
+                <p class="has-text-white">
+                    Already signed up? <a href="">Click here to login</a>
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
-        <p class="has-text-white">
-            <a href="">Sign Up</a> &middot;
-            <a href="">Forgot Password</a>
-        </p>
       </div>
-    </div>
+    </section>
   </div>
- </body>
-</html>
+</body>
