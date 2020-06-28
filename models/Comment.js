@@ -25,14 +25,14 @@ Comment.init(
             key: 'id'
          }
       },
-     /* workout_id: {
+     workout_id: {
          type: DataTypes.INTEGER,
          allowNull: false,
          references: {
             model: 'workout',
             key: 'id'
          }
-      }*/
+      }
    },
    {
       sequelize,
