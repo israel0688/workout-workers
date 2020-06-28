@@ -1,18 +1,18 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workout Workers-Login</title>
+    <title>Workout Workers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="/public/stylesheet/homestyle.css"/>
+    <link rel="stylesheet" href="../public/stylesheet/homepage.css">
   </head>
 
 <body>
-  <div class="hero is-fullheight is-dark">
-    <section class="container">
+  <section class="hero is-fullheight is-dark header-image">
+    <div class="container">
       <div class="columns is-multiline">
         <div class="column is-8 is-offset-2 register">
           <div class="columns">
@@ -21,40 +21,43 @@
               <p>Knausgaard snackwave 8-bit listicle intelligentsia cardigan small batch farm-to-table tote bag normcore beard. Disrupt 90's poutine, occupy prism locavore gastropub blog roof party seitan viral food truck vice.</p>
             </div>
             <div class="column right has-text-centered">
-              <h1 class="title is-4">Sign up today!</h1>
+              <h1 class="title has-text-white">Sign up today!</h1>
+              <hr class="login-hr">
               <p class="description">Please sign up to create your fitness profile!</p>
               <br>
               <form>
                 <div class="field">
                     <div class="control">
-                       <input class="input is-success" type="text" placeholder="Name">
+                       <input class="input is-dark" type="text" placeholder="Name">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                       <input class="input is-success" type="text" placeholder="Work Email">
+                       <input class="input is-dark" type="email" placeholder="Work Email">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                       <input class="input is-success" type="text" placeholder="Username">
+                       <input class="input is-dark" type="text" placeholder="Username">
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                       <input class="input is-success" type="text" placeholder="Password">
+                       <input class="input is-dark" type="password" placeholder="Password">
                     </div>
                 </div>
-                <button class="button is-block is-success is-fullwidth is-medium">Submit</button>
+                <button class="button is-block is-dark is-fullwidth is-large">Submit</button>
                 <br>
                 <p class="has-text-white">
-                    Already signed up? <a href="">Click here to login</a>
+                    Already a member? <a href="login.html">Click here to login</a>
                 </p>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+  <script src="../public/javascript/signup.js"></script>
 </body>
+</html>

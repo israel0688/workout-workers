@@ -1,0 +1,26 @@
+.header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    margin-top: -250px;
+    width: 400px;
+    margin-left: -200px;
+}
+
+/* .content {
+    opacity: 0.85;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
