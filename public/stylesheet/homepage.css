@@ -7,6 +7,19 @@
     background-color: #999;
 }
 
-/* .container {
-    margin-top: 500px;
-} */
+span {
+    width: 100px;
+}
+
+form {
+    width: 350px;
+}
+
+body, button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subtitle {
+    
+}
+  
