@@ -18,4 +18,15 @@ form, select {
 body, button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.title1 {
+    font-size: 400%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-left: 80px;
+    margin-right: 80px;
+}
   
