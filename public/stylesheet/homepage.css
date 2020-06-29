@@ -11,15 +11,11 @@ span {
     width: 100px;
 }
 
-form {
+form, select {
     width: 350px;
 }
 
 body, button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.subtitle {
-    
 }
   
