@@ -1,13 +1,13 @@
 # Workout Workers
-* An application that builds team comradery amongst co-workers by letting employees log their daily workouts and having other co-workers post words of encouragement on said workouts while also adding some healthy competition by announcing the most acitive employee of the week.
+* This application seeks to build comradery by letting employees log their daily workouts while having other co-workers comment with words of encouragement. At the same time, the app provides a dose of healthy competition by announcing the most active employee of the week.
 
 # Motivation 
-* In today's complex work environment there are plenty of employees who have trouble fiting in physical excercise throughout their hectic work week.  This app lets fellow coworkers log into their unique work group and gives them that needed motivation from those around them to help them reach their health goals while at the same time improving the chemestry amongst the team. 
+* In today's complex work environment there are plenty of employees who have trouble fitting in physical exercise throughout their hectic week.  Therefore, this app aims to unite employees and motivate them to keep up with their essential physical activity.
 
 ## Coding Bootcamp Project 2
 
 * [Github URL](https://github.com/israel0688/workout-workers)
-* [Heroku URL(coming soon)]()
+* [Heroku URL](https://murmuring-escarpment-27359.herokuapp.com/)
 
 ## Screenshots:
 ![alt "screenshot"](https://github.com/israel0688/workout-workers/blob/master/screenshots/screenshot1.png)
