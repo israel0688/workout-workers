@@ -29,4 +29,8 @@ body, button {
     margin-left: 80px;
     margin-right: 80px;
 }
+
+.input, option {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
   

@@ -1,4 +1,4 @@
-.header-image {
+.bg-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -7,6 +7,55 @@
     background-color: #999;
 }
 
-.container {
+.control {
+    width: 150px;
+}
 
+.card {
+    text-align: center;
+    max-width: 400px;
+    opacity: 0.9;
+    margin: auto;
+    background-color: rgb(63, 63, 63);
+}
+
+button {
+    margin: 0 auto;
+    width: 161px;
+    margin-bottom: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.column {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+span {
+    border: 1px solid black;
+    padding: 7.5px;
+    border-radius: 5px;
+    width: 161px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+}
+
+.title1 {
+    font-weight: bold;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.card-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 25px;;
+}
+
+.content, option {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
