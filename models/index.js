@@ -1,6 +1,7 @@
 const User = require('./User');
 const Comment = require('./Comment');
 const Workout = require('./Workout');
+const Employer = require('./Employer');
 
 // associations
 User.hasMany(Workout, {
@@ -8,7 +9,7 @@ User.hasMany(Workout, {
 });
 
 Workout.belongsTo(User, {
-  foreignKey: 'user_id',
+  foreignKey: 'user_id'
 });
 
 Comment.belongsTo(User, {
@@ -27,4 +28,12 @@ Workout.hasMany(Comment, {
   foreignKey: 'workout_id'
 });
 
-module.exports = { User, Workout, Comment };
+Employer.hasMany(User, {
+  foreignKey: 'user_id'
+});
+
+User.belongsTo(Employer, {
+  foreignKey: 'user_id'
+});
+
+module.exports = { User, Workout, Comment, Employer };

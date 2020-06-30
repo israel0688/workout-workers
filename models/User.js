@@ -36,6 +36,13 @@ User.init(
         validate: {
           len: [4]
         }
+      },
+      employer_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'employer',
+          key: 'id'
+        }
       }
     },
     {

@@ -1,11 +1,15 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Employer } = require('../../models');
 
 // GET /api/users
 // Get all users
 router.get('/', (req, res) => {
     User.findAll({
-        attributes: { exclude: ['password'] }
+        attributes: { exclude: ['password', 'user_id']}/*,
+        include: {
+          model: Employer,
+          attributes: ['employer_name']
+      } */
       })
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
@@ -13,12 +17,21 @@ router.get('/', (req, res) => {
           res.status(500).json(err);
         });
   });
+ /* Simple search using AND and =
+
+  Model.findAll({
+     where: {
+       attr1: 42,
+       attr2: 'cake'
+     }
+  })
+  WHERE attr1 = 42 AND attr2 = 'cake'*/
 
 // GET /api/users/1
 // Get a single user
 router.get('/:id', (req, res) => {
     User.findOne({
-        attributes: { exclude: ['password'] },
+        attributes: { exclude: ['password']},
         where: {
           id: req.params.id
         }
@@ -42,7 +55,8 @@ router.post('/', (req, res) => {
     User.create({
       name: req.body.name,
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      employer_id: req.body.employer_id
     })
       .then(dbUserData => res.json(dbUserData))
       .catch(err => {
