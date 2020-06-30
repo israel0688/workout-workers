@@ -1,19 +1,14 @@
 const router = require('express').Router();
-const {Workout, User, Comment } = require('../../models');
+const { User, Comment, Workout, Employer } = require('../../models');
 
-// get all workouts
+// get all Employers
 router.get('/', (req, res) => {
-    Workout.findAll({
+    Employer.findAll({
       attributes: [
         'id', 
-        'workout_type', 
-        'workout_amount', 
+        'employer_name',
         'created_at'
-      ],
-      include: {
-          model: User,
-          attributes: ['name']
-      }
+      ]
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
@@ -24,20 +19,21 @@ router.get('/', (req, res) => {
   
   // get one workout
   router.get('/:id', (req, res) => {
-    Workout.findOne({
+    Employer.findOne({
       where: {
         id: req.params.id
       },
       attributes: [
-        'id', 
-        'workout_type', 
-        'workout_amount', 
-        'created_at'
-      ]
+        'employer_name'
+      ],
+      include: {
+          model: User,
+          attributes: ['name']
+      }
     })
       .then(dbPostData => {
         if (!dbPostData) {
-          res.status(404).json({ message: 'No workout found with this id' });
+          res.status(404).json({ message: 'No Employer found' });
           return;
         }
         res.json(dbPostData);
@@ -48,12 +44,10 @@ router.get('/', (req, res) => {
       });
   });
   
-   // create a workout
+   // create an Employer
    router.post('/', (req, res) => {
-    Workout.create({
-      workout_type: req.body.workout_type,
-      workout_amount: req.body.workout_amount,
-      user_id: req.body.user_id
+    Employer.create({
+      employer_name: req.body.employer_name
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
@@ -62,12 +56,11 @@ router.get('/', (req, res) => {
       });
   });
   
-  // update a workout
+  // update an Employer
   router.put('/:id', (req, res) => {
-    Workout.update(
+    Employer.update(
       {
-        workout_type: req.body.workout_type,
-        workout_amount: req.body.workout_amount
+        employer_name: req.body.employer_name
       },
       {
         where: {
@@ -77,7 +70,7 @@ router.get('/', (req, res) => {
     )
       .then(dbPostData => {
         if (!dbPostData) {
-          res.status(404).json({ message: 'No workout found with this id' });
+          res.status(404).json({ message: 'No employer found with this id' });
           return;
         }
         res.json(dbPostData);
@@ -88,9 +81,9 @@ router.get('/', (req, res) => {
       });
   });
   
-  // delete a workout
+  // delete an Employer
   router.delete('/:id', (req, res) => {
-    Workout.destroy(
+    Employer.destroy(
       {
         where: {
           id: req.params.id
@@ -98,7 +91,7 @@ router.get('/', (req, res) => {
     })
       .then(dbPostData => {
         if(!dbPostData) {
-          res.status(404).json({ message: 'No workout found with this id' });
+          res.status(404).json({ message: 'No Employer found with this id' });
           return;
         }
         res.json(dbPostData);
