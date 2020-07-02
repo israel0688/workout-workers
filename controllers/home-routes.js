@@ -9,5 +9,13 @@ router.get('/', (req, res) => {
 router.get('/login', (req, res) => {
     res.render('login');
   });
+
+router.get('/user',(req, res) => {
+  res.render('userprofile');
+});
+
+router.get('/groupprofile', (req, res) => {
+  res.render('groupprofile');
+});
   
 module.exports = router;
