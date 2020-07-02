@@ -1,7 +1,8 @@
 // sign up
 async function signupFormHandler(event) {
     event.preventDefault();
-  
+
+    // const employer = document.querySelector('#employer-signup');
     const name = document.querySelector('#name-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
@@ -26,7 +27,10 @@ async function signupFormHandler(event) {
     }
   }
   
-  document.querySelector('#signup-submit').addEventListener('submit', signupFormHandler);
+  var signup = document.getElementById('signup-submit');
+  if(signup){
+  signup.addEventListener('click', signupFormHandler);
+  };
 
 //   login
   async function loginFormHandler(event) {
@@ -53,4 +57,8 @@ async function signupFormHandler(event) {
     }
   }
   
-  document.querySelector('#login-submit').addEventListener('submit', loginFormHandler);
+  var login = document.getElementById('login-submit');
+  if(login){
+  login.addEventListener('click', loginFormHandler);
+  };
+  

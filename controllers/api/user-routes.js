@@ -53,10 +53,10 @@ router.get('/:id', (req, res) => {
 // Creating a user
 router.post('/', (req, res) => {
     User.create({
+      // employer_id: req.body.employer_id,
       name: req.body.name,
       email: req.body.email,
-      password: req.body.password,
-      employer_id: req.body.employer_id
+      password: req.body.password
     })
       .then(dbUserData => res.json(dbUserData))
       .catch(err => {
