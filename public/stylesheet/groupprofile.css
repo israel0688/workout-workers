@@ -7,14 +7,97 @@
     background-color: #999;
 }
 
-.media {
-    background-color:  rgb(63, 63, 63);
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  } */
+  
+  body {
+    background: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .heading {
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 20%;
+    background-color: rgb(63, 63, 63);
     opacity: 0.9;
-    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .card-content {
+    font-weight: bold;
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
 }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
 
-button {
+  button {
+    margin: 0 auto;
     width: 161px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+  
+  /* @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  } */
+  
+  
