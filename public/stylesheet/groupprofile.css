@@ -22,7 +22,8 @@
     width: 90%;
     margin: 50px auto;
   }
-  .heading {
+  .title1 {
+    font-weight: bold;
     text-align: center;
     font-size: 300%;
     margin-bottom: 80px;
