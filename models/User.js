@@ -37,13 +37,13 @@ User.init(
           len: [4]
         }
       },
-      // employer_id: {
-      //   type: DataTypes.INTEGER,
-      //   references: {
-      //     model: 'employer',
-      //     key: 'id'
-      //   }
-      // }
+      employer_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'employer',
+          key: 'id'
+         }
+      }
     },
     {
         hooks: {

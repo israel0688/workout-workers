@@ -7,10 +7,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    res.render('login');
+    res.render('userprofile');
   });
 
 router.get('/user',(req, res) => {
+
+  console.log(req.session);
   res.render('userprofile');
 });
 
