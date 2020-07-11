@@ -80,25 +80,23 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
-  /* @media screen and (max-width: 1000px) {
-    .card {
-      width: 40%;
-    }
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
   }
-  
-  @media screen and (max-width: 620px) {
-    .container {
-      width: 100%;
-    }
-  
-    .heading {
-      padding: 20px;
-      font-size: 20px;
-    }
-  
-    .card {
-      width: 80%;
-    }
-  } */
-  
-  
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
