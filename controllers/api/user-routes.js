@@ -5,7 +5,7 @@ const { User, Employer } = require('../../models');
 // Get all users
 router.get('/', (req, res) => {
     User.findAll({
-        attributes: { exclude: ['password', 'user_id']}/*,
+        attributes: { exclude: ['password']}/*,
         include: {
           model: Employer,
           attributes: ['employer_name']

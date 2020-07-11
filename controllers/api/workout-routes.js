@@ -48,19 +48,19 @@ router.get('/', (req, res) => {
       });
   });
   
-   // create a workout
-   router.post('/', (req, res) => {
-    Workout.create({
-      workout_type: req.body.workout_type,
-      workout_amount: req.body.workout_amount,
-      user_id: req.body.user_id
-    })
-      .then(dbPostData => res.json(dbPostData))
-      .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
+  //  // create a workout
+  //  router.post('/', (req, res) => {
+  //   Workout.create({
+  //     workout_type: req.body.workout_type,
+  //     workout_amount: req.body.workout_amount,
+  //     user_id: req.body.user_id
+  //   })
+  //     .then(dbPostData => res.json(dbPostData))
+  //     .catch(err => {
+  //       console.log(err);
+  //       res.status(500).json(err);
+  //     });
+  // });
   
   // update a workout
   router.put('/:id', (req, res) => {
