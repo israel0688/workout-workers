@@ -1,5 +1,5 @@
 # Workout Workers
-* This application seeks to build comradery by letting employees log their daily workouts while having other co-workers comment with words of encouragement. At the same time, the app provides a dose of healthy competition by announcing the most active employee of the week.
+* This app seeks to build comradery by letting employees log their daily steps while having other co-workers encourage their progress by giving virtual high fives. Throughout the day employees can view their profile card alongside others to see how they have done compared to their colleagues. This app provides a dose of healthy competition and team building to meet fitness goals!
 
 # Motivation 
 * In today's complex work environment there are plenty of employees who have trouble fitting in physical exercise throughout their hectic week.  Therefore, this app aims to unite employees and motivate them to keep up with their essential physical activity.
@@ -10,9 +10,11 @@
 * [Heroku URL](https://murmuring-escarpment-27359.herokuapp.com/)
 
 ## Screenshots:
-![alt "screenshot"](https://github.com/israel0688/workout-workers/blob/master/screenshots/screenshot1.png)
+![Alt text](/screenshots/SS_1.png?raw=true)
 
-![alt "screenshot"](https://github.com/israel0688/workout-workers/blob/master/screenshots/screenshot2.png)
+![Alt text](/screenshots/SS_2.png?raw=true)
+
+![Alt text](/screenshots/SS_3.png?raw=true)
 
 ### Packages Required to Run the Application Locally 
 * [Bulma(new technology)](https://www.npmjs.com/package/bulma)
