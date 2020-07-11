@@ -6,13 +6,13 @@ class Employer extends Model {}
 // create fields/columns for Employer model
 Employer.init(
     {
-      id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true
-      },
-      employer_name: {
+      // id: {
+      //   type: DataTypes.INTEGER,
+      //   allowNull: false,
+      //   primaryKey: true,
+      //   autoIncrement: true
+      // },
+      employer: {
         type: DataTypes.STRING,
         allowNull: false
       }

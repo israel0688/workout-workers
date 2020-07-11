@@ -54,6 +54,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     User.create({
       // employer_id: req.body.employer_id,
+      employer: req.body.employer,
       name: req.body.name,
       email: req.body.email,
       password: req.body.password

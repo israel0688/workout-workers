@@ -18,6 +18,14 @@ User.init(
         primaryKey: true,
         autoIncrement: true
       },
+      employer: {
+        type: DataTypes.STRING,
+        allowNull: false
+        // references: {
+        //   model: 'employer',
+          // key: 'id'
+        // }
+      },
       name: {
         type: DataTypes.STRING,
         allowNull: false
@@ -37,13 +45,6 @@ User.init(
           len: [4]
         }
       },
-      // employer_id: {
-      //   type: DataTypes.INTEGER,
-      //   references: {
-      //     model: 'employer',
-      //     key: 'id'
-      //   }
-      // }
     },
     {
         hooks: {

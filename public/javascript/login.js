@@ -3,27 +3,31 @@
 async function signupFormHandler(event) {
     event.preventDefault();
 
-    // const employer = document.querySelector('#employer-signup');
+    const employer = document.querySelector('#employer-signup').value.trim();
     const name = document.querySelector('#name-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
   
-    if (name && email && password) {
+    if (employer && name && email && password) {
       const response = await fetch('/api/users', {
         method: 'post',
         body: JSON.stringify({
+          employer,
           name,
           email,
           password
         }),
         headers: { 'Content-Type': 'application/json' }
       });
+
+      const data = await response.json();
+      console.log(data);
   
       // check the response status
       if (response.ok) {
         console.log('success');
       
-        document.location.replace('/userprofile', { name });
+        document.location.replace('/userprofile/' + data.id);
     
       } else {
         alert(response.statusText);
