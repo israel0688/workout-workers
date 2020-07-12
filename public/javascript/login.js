@@ -19,9 +19,15 @@ async function signupFormHandler(event) {
       });
   
       // check the response status
+      const data = await response.json();
+      console.log(data);
+  
+      // check the response status
       if (response.ok) {
         console.log('success');
-        document.location.replace('/user');
+      
+        document.location.replace('/userprofile/' + data.id);
+    
       } else {
         alert(response.statusText);
       }
@@ -44,14 +50,19 @@ async function signupFormHandler(event) {
       const response = await fetch('/api/users/login', {
         method: 'post',
         body: JSON.stringify({
+          name,
           email,
           password
         }),
         headers: { 'Content-Type': 'application/json' }
       });
   
+      const data = await response.json();
+      console.log(response);
+      console.log(name);
+  
       if (response.ok) {
-        document.location.replace('/user');
+        document.location.replace('/userprofile/' + data.user.id);
       } else {
         alert(response.statusText);
       }

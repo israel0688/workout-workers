@@ -6,18 +6,44 @@ router.get('/', (req, res) => {
   res.render('homepage');
 });
 
-router.get('/login', (req, res) => {
-    res.render('userprofile');
-  });
+router.get('/userprofile/:id', (req, res) => {
 
-router.get('/user',(req, res) => {
+  User.findOne({
+      attributes: { exclude: ['password']},
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbUserData => {
+        if (!dbUserData) {
+          res.status(404).json({ message: 'No user found with this id' });
+          return;
+        }
+        
+        res.render('userprofile', {name: dbUserData.name});
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
 
-  console.log(req.session);
-  res.render('userprofile');
+
+
+
 });
 
+// router.get('/login', (req, res) => {
+//     res.render('userprofile');
+//   });
+
+// router.get('/user',(req, res) => {
+
+//   console.log(req.session);
+//   res.render('userprofile');
+// });
+
 router.get('/groupprofile', (req, res) => {
-  res.render('groupprofile');
+ res.render('groupprofile');
 });
   
 module.exports = router;
